@@ -16,8 +16,9 @@ int print_char(va_list c)
 	return (1);
 }
 /**
- *Print_porcentage - %
- *Return: 1.
+ * print_porcentage - %
+ *
+ * Return: 1.
  */
 int print_porcentage(void)
 {
