@@ -25,7 +25,7 @@ int print_dec(va_list d)
 			len++;
 		}
 		powten = 1;
-		for (j = 1; j <= len -1; j++)
+		for (j = 1; j <= len - 1; j++)
 			powten *= 10;
 		for (j = 1; j <= len; j++)
 		{

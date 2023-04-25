@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * * find_function - function that finds formats for _printf
+ * find_function - function that finds formats for _printf
  * calls the corresponding function.
  * @format: format (char, string, int, decimal)
  * Return: NULL or function associated;
@@ -31,19 +31,19 @@ int (*find_function(const char *format))(va_list)
 	while (find_f[i].sc)
 	{
 		if (find_f[i].sc[0] == (*format))
-			retunr (find_f[i].f);
+			return (find_f[i].f);
 
-		i++
+		i++;
 	}
 	return (NULL);
-		
+
 }
 /**
  * _printf - function that produces output according to a format.
  * @format: format (char, string, int, decimal)
  * Return: size the output text;
  */
-int _print (const char *format, ..)
+int _printf(const char *format, ...)
 {
 	va_list ap;
 	int (*f)(va_list);
@@ -54,7 +54,7 @@ int _print (const char *format, ..)
 	va_start(ap, format);
 	while (format[i])
 	{
-		while (format[i] != '%' && format[i]);
+		while (format[i] != '%' && format[i])
 		{
 			_putchar(format[i]);
 			cprint++;
@@ -72,9 +72,9 @@ int _print (const char *format, ..)
 	if (!format[i + 1])
 		return (-1);
 	_putchar(format[i]);
-	cprint++
+	cprint++;
 		if (format[i + 1] == '%')
-			i ++ 2;
+			i += 2;
 		else
 			i++;
 	}

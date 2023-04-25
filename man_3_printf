@@ -55,4 +55,4 @@ _printf("%s, %s %d, %d\\n", weekday, month, day, year);
 .SH SEE ALSO
 .I printf(3)
 .SH AUTHOR
-Adnan Hassan , (Not available)
+Adnan Hassan , Madani Am Art
