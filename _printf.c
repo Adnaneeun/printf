@@ -14,7 +14,7 @@ int (*find_function(const char *format))(va_list)
 	unsigned int i = 0;
 	code_f find_f[] = {
 		{"c", print_char},
-		{"s", print_sting},
+		{"s", print_string},
 		{"i", print_int},
 		{"d", print_int},
 		{"r", print_dec},
@@ -43,7 +43,11 @@ int (*find_function(const char *format))(va_list)
  * @format: format (char, string, int, decimal)
  * Return: size the output text;
  */
+<<<<<<< HEAD
 int _printf(const char *format, ...)
+=======
+int _print (const char *format, ...)
+>>>>>>> origin/master
 {
 	va_list ap;
 	int (*f)(va_list);
