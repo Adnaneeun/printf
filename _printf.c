@@ -24,7 +24,6 @@ int (*find_function(const char *format))(va_list)
 		{"R", print_rot13},
 		{NULL, NULL}
 	};
-
 	while (find_f[i].sc)
 	{
 		if (find_f[i].sc[0] == (*format))
@@ -43,7 +42,6 @@ int _printf(const char *format, ...)
 	va_list ap;
 	int (*f)(va_list);
 	unsigned int i = 0, cprint = 0;
-
 	if (format == NULL)
 		return (-1);
 	va_start(ap, format);

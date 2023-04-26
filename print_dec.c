@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_dec - function that printd a decimal
+ * print_dec - function that prints an decimal
  * @d: integer to print
  * Descriptions: prints digit with _putchar
  * Return: size the output text
@@ -32,6 +32,8 @@ int print_dec(va_list d)
 			digit = n / powten;
 			if (n < 0)
 				_putchar((digit * -1) + 48);
+			else
+				_putchar(digit + '0');
 			count++;
 			n -= digit * powten;
 			powten /= 10;
